@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".information" android:textAlignment="center">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/question_bg"
+            android:id="@+id/bg"
+            android:contentDescription="@string/background_image_for_page" android:scaleX="1.2" android:scaleY="1.2"
+            tools:srcCompat="@mipmap/question_bg" android:foregroundGravity="bottom" android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"/>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:id="@+id/nedbankLogo2"
+            android:scaleType="fitCenter" android:baselineAlignBottom="false"
+            android:layout_centerInParent="false"
+            android:src="@drawable/nedbank"
+            android:contentDescription="@string/logo"
+            android:background="#00FFFFFF"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"/>
+
+    <TextView
+            android:text="@string/did_you_know"
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:id="@+id/loading"
+            tools:text="@string/did_you_know"
+            android:textSize="30sp"
+            android:fontFamily="@font/nedbanksansbold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            tools:visibility="gone" android:visibility="gone"/>
+    <TextView
+            android:text="@string/find_them"
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:id="@+id/question"
+            tools:text="@string/find_them"
+            android:textSize="30sp"
+            android:fontFamily="@font/nedbanksansbold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="50dp"
+            android:gravity="center_horizontal|top|center_vertical"
+            android:layout_marginTop="150dp" android:padding="10dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="150dp">
+        <Button
+                android:text="@string/button"
+                android:layout_width="150dp"
+                android:background="@drawable/ic_noanswer_question"
+                android:layout_height="150dp" android:id="@+id/answer_01"
+                android:textSize="30sp"
+                android:fontFamily="@font/nedbanksansbold"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="ButtonStyle" android:layout_marginTop="15dp" android:layout_marginBottom="0dp"/>
+        <Button
+                android:text="@string/button"
+                android:layout_width="150dp"
+                android:background="@drawable/ic_noanswer_question"
+                android:layout_height="150dp" android:id="@+id/answer_02"
+                android:textSize="30sp"
+                android:fontFamily="@font/nedbanksansbold"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="ButtonStyle" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+        <Button
+                android:text="@string/button"
+                android:layout_width="150dp"
+                android:background="@drawable/ic_noanswer_question"
+                android:layout_height="150dp" android:id="@+id/answer_03"
+                android:textSize="30sp"
+                android:fontFamily="@font/nedbanksansbold"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="ButtonStyle" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="859dp"
+            android:layout_height="150dp"
+            android:id="@+id/txtCorrect"
+            android:textSize="30sp"
+            android:fontFamily="@font/nedbanksansbold"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="50dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

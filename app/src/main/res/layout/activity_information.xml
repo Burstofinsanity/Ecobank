@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".information" android:textAlignment="center">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/pattern"
+            android:scaleType="centerCrop" android:foregroundGravity="top|bottom" android:cropToPadding="false"
+            tools:srcCompat="@mipmap/info_bg" android:contentDescription="@string/background_image_for_page"
+            app:srcCompat="@mipmap/info_bg"/>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:id="@+id/nedbankLogo"
+            android:scaleType="fitCenter" android:baselineAlignBottom="false"
+            android:layout_centerInParent="false"
+            android:src="@drawable/nedbank"
+            android:contentDescription="@string/logo" android:background="#00FFFFFF"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="20dp" android:layout_marginEnd="20dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="125dp" android:layout_alignParentTop="false"
+            android:gravity="center" android:id="@+id/form">
+
+        <TextView
+                android:id="@+id/question"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nedbanksansbold"
+                android:gravity="center"
+                android:maxWidth="500dp"
+                android:paddingBottom="10dp"
+                android:text="@string/information"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                tools:text="@string/information" />
+
+        <LinearLayout
+                android:layout_width="550dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nedbanksansbold"
+                        android:text="@string/in_name"
+                        android:textColor="@color/colorPrimary" />
+
+                <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/inputxhdpi"
+                        android:ems="6"
+                        android:fontFamily="@font/nedbanksansmedium"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/txtSurname"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nedbanksansbold"
+                        android:text="@string/in_surn"
+                        android:textColor="@color/colorPrimary" />
+
+                <EditText
+                        android:id="@+id/et_surname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/inputxhdpi"
+                        android:ems="6"
+                        android:fontFamily="@font/nedbanksansmedium"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="400dp"
+                android:layout_height="60dp" android:layout_margin="10dp">
+            <TextView
+                    android:text="@string/in_mail"
+
+                    android:fontFamily="@font/nedbanksansbold" android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" android:id="@+id/txtMail" android:layout_weight="1"/>
+            <EditText
+                    android:background="@mipmap/inputxhdpi"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/nedbanksansmedium"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="6"
+                    android:id="@+id/et_mail"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="400dp"
+                android:layout_height="60dp" android:layout_margin="10dp">
+            <TextView
+                    android:text="@string/in_cell"
+
+                    android:fontFamily="@font/nedbanksansbold" android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" android:id="@+id/txtCell" android:layout_weight="1"/>
+            <EditText
+                    android:background="@mipmap/inputxhdpi"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/nedbanksansmedium"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:inputType="phone"
+                    android:ems="6"
+                    android:id="@+id/et_cell" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="400dp"
+                android:layout_height="60dp" android:layout_margin="10dp">
+            <TextView
+                    android:text="@string/your_country_of_origin"
+                    android:fontFamily="@font/nedbanksansbold" android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" android:id="@+id/txtOrigin" android:layout_weight="1"/>
+            <EditText
+                    android:background="@mipmap/inputxhdpi"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/nedbanksansmedium"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:inputType="text"
+                    android:ems="6"
+                    android:id="@+id/et_origin" android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/txtBranch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nedbanksansbold"
+                    android:text="Where is your closest Nedbank Branch"
+                    android:textColor="@color/colorPrimary" />
+
+            <EditText
+                    android:id="@+id/et_branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/inputxhdpi"
+                    android:ems="6"
+                    android:fontFamily="@font/nedbanksansmedium"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|top"
+                android:orientation="vertical"
+                android:paddingTop="0dp">
+
+            <TextView
+                    android:id="@+id/st_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nedbanksansbold"
+                    android:gravity="center"
+                    android:maxWidth="500dp"
+                    android:text="Do you have a Nedbank account?"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:text="Do you have a Nedbank account?" />
+
+            <RadioGroup
+                    android:id="@+id/account"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <RadioButton
+                        android:id="@+id/acc_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="@font/nedbanksansbold"
+                        android:text="Yes"
+                        android:textColor="@color/colorPrimary" />
+
+                <RadioButton
+                        android:id="@+id/acc_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="@font/nedbanksansbold"
+                        android:text="No"
+                        android:textColor="@color/colorPrimary"
+                        tools:text="No" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal|top"
+                android:orientation="vertical"
+                android:paddingTop="0dp">
+
+            <TextView
+                    android:id="@+id/st_marketing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nedbanksansbold"
+                    android:gravity="center"
+                    android:maxWidth="500dp"
+                    android:text="@string/marketing_question"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    tools:text="@string/marketing_question" />
+
+            <RadioGroup
+                    android:id="@+id/marketing"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:fontFamily="@font/nedbanksansbold"
+                        android:text="Yes"
+                        android:textColor="@color/colorPrimary" />
+
+                <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nedbanksansbold"
+                        android:text="No"
+                        android:textColor="@color/colorPrimary"
+                        tools:text="No" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:paddingTop="0dp">
+
+            <CheckBox
+                    android:id="@+id/ch_agree"
+                    android:layout_width="600dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox"
+                    android:ems="6"
+                    android:fontFamily="@font/nedbanksansbold"
+                    android:paddingLeft="10dp"
+                    android:text="@string/agree"
+                    android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+        <Button
+                android:text="@string/btn_continue"
+                android:layout_width="300dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:fontFamily="@font/nedbanksansbold"
+                android:layout_height="wrap_content" android:id="@+id/submit"
+                android:background="@drawable/cleanbutton"/>
+
+    </LinearLayout>
+</RelativeLayout>

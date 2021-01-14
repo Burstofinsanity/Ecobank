@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "511857517137",
+    "firebase_url": "https://nedbank-eco-bank.firebaseio.com",
+    "project_id": "nedbank-eco-bank",
+    "storage_bucket": "nedbank-eco-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511857517137:android:8611c7a7f2133434",
+        "android_client_info": {
+          "package_name": "com.bornintelligence.nebbank_ecobank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511857517137-2p0n8tdqp5k6ub1tss70ibggnnktuljp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNFV1bWIAGYowaWPU1abJka8fu2ljDqQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511857517137-2p0n8tdqp5k6ub1tss70ibggnnktuljp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
